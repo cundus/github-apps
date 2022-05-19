@@ -7,7 +7,7 @@ const CardRepos = ({ data }) => {
     return date;
   };
 
-  console.log(data);
+  // console.log(data);
 
   const onClickCard = () => {
     window.open(data.html_url, "_blank");
