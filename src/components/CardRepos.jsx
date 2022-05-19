@@ -7,7 +7,7 @@ const CardRepos = ({ data }) => {
     return date;
   };
 
-  // console.log(data);
+  // console.log(data.update_at);
 
   const onClickCard = () => {
     window.open(data.html_url, "_blank");
@@ -22,7 +22,7 @@ const CardRepos = ({ data }) => {
         </div>
         <div className="flex gap-4">
           <p>{data.language}</p>
-          <p>Updated on {formatTime(data.update_at)}</p>
+          <p>Updated on {formatTime(data.updated_at)}</p>
         </div>
       </div>
     </div>
