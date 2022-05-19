@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Card = ({ data }) => {
   const navigate = useNavigate();
   const onClickCard = () => {
-    navigate(`/${data.login}`);
+    navigate(`/user/${data.login}`);
   };
 
   return (
