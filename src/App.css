@@ -1,0 +1,7 @@
+nav > ul > li {
+  @apply text-base md:text-xl;
+}
+
+.active {
+  @apply font-bold;
+}
