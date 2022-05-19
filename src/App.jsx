@@ -9,7 +9,7 @@ const App = () => {
   ReactGA.initialize(TRACKING_ID);
 
   React.useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   // configure react-router
