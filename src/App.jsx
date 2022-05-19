@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Layout, User } from "./pages";
+import { Home, Layout, Search, User } from "./pages";
 import "./App.css";
 
 const App = () => {
@@ -10,7 +10,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path=":id" element={<User />} />
+          <Route path="user/:id" element={<User />} />
+          <Route path="search/" element={<Search />} />
         </Route>
         <Route path="*" element={<div>404</div>} />
       </Routes>
